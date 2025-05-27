@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
         
         <p className="text-2xl md:text-3xl font-medium text-center max-w-3xl mb-12
           bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-          Managing Excellence, Delivering Experience
+          Zaloni Club, Duliajan, Delivering Experience
         </p>
         
         <div className="relative group">
