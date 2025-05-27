@@ -17,31 +17,15 @@ export interface CommitteeMember {
   photo: string;
 }
 
+// Default placeholder for members without photos
+const placeholderPhoto = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YzZjRmNiIvPjxwYXRoIGQ9Ik0xMDAgNzBhMjUgMjUgMCAxMDAtNTAgMjUgMjUgMCAwMDAgNTB6bTAgMTBjLTMzIDAtNTAgMTctNTAgMjVoMTAwYzAtOC0xNy0yNS01MC0yNXoiIGZpbGw9IiNkMWQ1ZGIiLz48L3N2Zz4=";
+
 export const committeeMembers: CommitteeMember[] = [
+  // EC Members first
   {
-    name: "Mr. RUPJYOTI PHUKAN",
-    designation: "PRESIDENT",
-    photo: rupjyotiPhukan
-  },
-  {
-    name: "Mr. DILIP KR GOSWAMI",
-    designation: "VICE PRESIDENT",
-    photo: dilipGoswami
-  },
-  {
-    name: "Mr. DIP KUMAR SAIKIA",
-    designation: "HONY. GENERAL SECRETARY",
-    photo: dipKumarSaikia
-  },
-  {
-    name: "Mr. PANKAJ KR CHETIA",
-    designation: "HONY ENT SECRETARY",
-    photo: pankajChetia
-  },
-  {
-    name: "Mr. MANAB KALYAN TAMULY",
-    designation: "HONY TREASURER",
-    photo: manabTamuly
+    name: "Mr. SHAKEEL INTAZ",
+    designation: "EC MEMBER",
+    photo: shakeelIntaz
   },
   {
     name: "Mr. MADHURJYA BARUA",
@@ -49,44 +33,25 @@ export const committeeMembers: CommitteeMember[] = [
     photo: madhurjyaBarua
   },
   {
-    name: "Mr. PRAKASH DEKA",
+    name: "Mr. MALAY KUMAR DAS",
     designation: "EC MEMBER",
-    photo: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" // No matching image found
+    photo: placeholderPhoto
   },
   {
     name: "Mr. GAURANGA BORGOHAIN",
     designation: "EC MEMBER",
-    photo: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" // No matching image found
+    photo: placeholderPhoto
   },
   {
-    name: "Mr. MALAY KUMAR DAS",
+    name: "Mr. PRAKASH DEKA",
     designation: "EC MEMBER",
-    photo: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg" // No matching image found
+    photo: placeholderPhoto
   },
+  // Secretaries
   {
-    name: "Mr. SHAKEEL INTAZ",
-    designation: "EC MEMBER",
-    photo: shakeelIntaz
-  },
-  {
-    name: "Mr. DIP KUMAR SAIKIA",
-    designation: "HONY. GENERAL SECRETARY",
-    photo: dipKumarSaikia
-  },
-  {
-    name: "Mr. PANKAJ KR CHETIA",
-    designation: "HONY ENT SECRETARY",
-    photo: pankajChetia
-  },
-  {
-    name: "Mr. MANAB KALYAN TAMULY",
-    designation: "HONY TREASURER",
-    photo: manabTamuly
-  },
-  {
-    name: "Mr. PADMA NATH TAID",
-    designation: "HONY GOLF SECRETARY",
-    photo: drPnTaid
+    name: "Mr. BISWAJIT BHATTACHARJEE",
+    designation: "HONY TENNIS SECRETARY",
+    photo: biswajitBhattacharya
   },
   {
     name: "Mr. PRANJAL NEOG",
@@ -94,24 +59,51 @@ export const committeeMembers: CommitteeMember[] = [
     photo: pranjalNeog
   },
   {
-    name: "Mr. BISWAJIT BHATTACHARJEE",
-    designation: "HONY TENNIS SECRETARY",
-    photo: biswajitBhattacharya
+    name: "Mr. PADMA NATH TAID",
+    designation: "HONY GOLF SECRETARY",
+    photo: drPnTaid
+  },
+  {
+    name: "Mr. PANKAJ KR CHETIA",
+    designation: "HONY ENT SECRETARY",
+    photo: pankajChetia
+  },
+  // Treasury
+  {
+    name: "Mr. MANAB KALYAN TAMULY",
+    designation: "HONY TREASURER",
+    photo: manabTamuly
+  },
+  // Top Leadership (in ascending order of hierarchy)
+  {
+    name: "Mr. DIP KUMAR SAIKIA",
+    designation: "HONY. GENERAL SECRETARY",
+    photo: dipKumarSaikia
+  },
+  {
+    name: "Mr. DILIP KR GOSWAMI",
+    designation: "VICE PRESIDENT",
+    photo: dilipGoswami
+  },
+  {
+    name: "Mr. RUPJYOTI PHUKAN",
+    designation: "PRESIDENT",
+    photo: rupjyotiPhukan
   },
   // EC Members
-  {
-    name: "Mr. RUPAM BARUA",
-    designation: "EC MEMBER",
-    photo: rupamBarua
-  },
-  {
-    name: "Mr. MADHURJYA BARUA",
-    designation: "EC MEMBER",
-    photo: madhurjyaBarua
-  },
-  {
-    name: "Mr. SHAKEEL INTAZ",
-    designation: "EC MEMBER",
-    photo: shakeelIntaz
-  }
+  // {
+  //   name: "Mr. RUPAM BARUA",
+  //   designation: "EC MEMBER",
+  //   photo: rupamBarua
+  // },
+  // {
+  //   name: "Mr. MADHURJYA BARUA",
+  //   designation: "EC MEMBER",
+  //   photo: madhurjyaBarua
+  // },
+  // {
+  //   name: "Mr. SHAKEEL INTAZ",
+  //   designation: "EC MEMBER",
+  //   photo: shakeelIntaz
+  // }
 ];
