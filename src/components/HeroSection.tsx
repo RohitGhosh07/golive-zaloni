@@ -37,26 +37,26 @@ const HeroSection: React.FC = () => {
         
         <p className="text-2xl md:text-3xl font-medium text-center max-w-3xl mb-12
           bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-          Zaloni Club, Duliajan, Delivering Experience
+          Zaloni Club, Duliajan
         </p>
         
         <div className="relative group">
-          <button
-            onClick={handleGoLive}
-            disabled={isCountdownActive}
-            className="relative px-12 py-6 text-xl font-bold text-white 
-              bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 
-              rounded-2xl shadow-lg transition-all duration-300
-              hover:shadow-2xl hover:scale-105
-              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500
-              disabled:opacity-50 disabled:cursor-not-allowed
-              overflow-hidden"
-          >
-            <span className="relative z-10">Launch ERP</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
-          <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 blur-xl group-hover:opacity-30 transition-opacity duration-300"></div>
-        </div>
+  <button
+    onClick={handleGoLive}
+    disabled={isCountdownActive}
+    className="relative z-10 px-12 py-6 text-xl font-bold text-white 
+      bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 
+      rounded-2xl shadow-lg transition-all duration-300
+      hover:shadow-2xl hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500
+      disabled:opacity-50 disabled:cursor-not-allowed"
+  >
+    Go Live
+  </button>
+  <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+  <div className="absolute -inset-4 z-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 blur-xl group-hover:opacity-30 transition-opacity duration-300 rounded-3xl"></div>
+</div>
+
       </div>
 
       {isCountdownActive && (
