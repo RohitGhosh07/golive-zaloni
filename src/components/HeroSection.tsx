@@ -81,7 +81,7 @@ const HeroSection: React.FC = () => {
               group"
           >
             <span className="relative z-10 flex items-center space-x-2">
-              <span>Launch ERP</span>
+              <span>Go Live</span>
               <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
